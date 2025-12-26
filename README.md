@@ -83,11 +83,14 @@ The application emphasizes **simplicity**, **clarity**, and **actionable financi
 ## 🖼 Screenshots
 
 <img width="1845" height="849" alt="dashboard-overview" src="https://github.com/user-attachments/assets/e01ec67f-f3c6-453d-a704-1e86d81ac6db" />
-***
+
+
 <img width="1028" height="757" alt="transactions-panel" src="https://github.com/user-attachments/assets/fff35494-cddb-4843-b08c-e482bc19c39f" />
-***
+
+
 <img width="882" height="617" alt="budget-panel" src="https://github.com/user-attachments/assets/cc475119-72a9-42ea-b4ee-1efee1bf16f5" />
-***
+
+
 <img width="871" height="546" alt="insights-panel" src="https://github.com/user-attachments/assets/d151745a-717f-4327-b240-ca6c060f663e" />
 
 ## ▶️ How to Run the Project
