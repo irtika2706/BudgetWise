@@ -1,0 +1,36 @@
+### Register User
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "example",
+  "email": "example@gmail.com",
+  "password": "12345678"
+}
+
+### Login User
+POST http://localhost:8081/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "example@gmail.com",
+  "password": "12345678"
+}
+
+### Forgot Password
+POST http://localhost:8081/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "test1@gmail.com"
+}
+
+### Reset Password
+POST http://localhost:8081/api/auth/reset-password
+Content-Type: application/json
+
+{
+  "token": "11d8385a-b529-4ecc-a6ef-f24a36d2a457",
+  "newPassword": "new123456"
+}
+

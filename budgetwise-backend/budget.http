@@ -1,0 +1,24 @@
+### Create / Update Budget
+POST http://localhost:8081/api/budget
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+Content-Type: application/json
+
+{
+  "month": "2025-01",
+  "totalBudget": 30000,
+  "categories": [
+    { "category": "Food", "amount": 8000 },
+    { "category": "Groceries", "amount": 7000 },
+    { "category": "Shopping", "amount": 5000 }
+  ]
+}
+
+### Get Budget Summary
+GET http://localhost:8081/api/budget?month=2025-12
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+
+###
+
+### Delete Budget
+DELETE http://localhost:8081/api/budget?month=2025-01
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU

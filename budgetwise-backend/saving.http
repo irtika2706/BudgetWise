@@ -1,0 +1,40 @@
+### Create goal
+POST http://localhost:8081/api/savings-goals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU3NDQ0NCwiZXhwIjoxNzY2NjEwNDQ0fQ.jc8f1REDwwvhiU8cwgHRpLizTeoWRvpkWNvuK1n7O5I
+Content-Type: application/json
+
+{
+  "name": "Emergency Fund",
+  "targetAmount": 50000
+}
+
+###
+
+### Add entry
+POST http://localhost:8081/api/savings-goals/1/entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU3NDQ0NCwiZXhwIjoxNzY2NjEwNDQ0fQ.jc8f1REDwwvhiU8cwgHRpLizTeoWRvpkWNvuK1n7O5I
+Content-Type: application/json
+
+{
+  "amount": 5000,
+  "date": "2025-01-10",
+  "note": "Initial saving"
+}
+
+###
+
+### Get goals
+GET http://localhost:8081/api/savings-goals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU3NDQ0NCwiZXhwIjoxNzY2NjEwNDQ0fQ.jc8f1REDwwvhiU8cwgHRpLizTeoWRvpkWNvuK1n7O5I
+
+###
+
+### Delete entry
+DELETE http://localhost:8081/api/savings-goals/entries/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU3NDQ0NCwiZXhwIjoxNzY2NjEwNDQ0fQ.jc8f1REDwwvhiU8cwgHRpLizTeoWRvpkWNvuK1n7O5I
+
+###
+
+### Delete goal
+DELETE http://localhost:8081/api/savings-goals/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU3NDQ0NCwiZXhwIjoxNzY2NjEwNDQ0fQ.jc8f1REDwwvhiU8cwgHRpLizTeoWRvpkWNvuK1n7O5I

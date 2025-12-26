@@ -1,0 +1,41 @@
+### Add Expense
+POST http://localhost:8081/api/expenses
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+Content-Type: application/json
+
+{
+  "title": "Lunch",
+  "amount": 250,
+  "category": "Food",
+  "type": "EXPENSE",
+  "date": "2025-01-19"
+}
+
+### Add Income
+POST http://localhost:8081/api/expenses
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+Content-Type: application/json
+
+{
+  "title": "Salary",
+  "amount": 50000,
+  "category": "Salary",
+  "type": "INCOME",
+  "date": "2025-01-01"
+}
+
+### Get Expenses
+GET http://localhost:8081/api/expenses
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+
+### Update Expense (type NOT allowed)
+PUT http://localhost:8081/api/expenses/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTc2NjU4NDMwNCwiZXhwIjoxNzY2NjIwMzA0fQ.J6DzJOR_Lmys6ZGsPYEZ-cayFj2nsti0Zf-0t8gIeyU
+Content-Type: application/json
+
+{
+  "title": "Interest",
+  "amount": 300,
+  "category": "Interest",
+  "date": "2025-01-19"
+}
